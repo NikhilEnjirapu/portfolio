@@ -1,0 +1,8 @@
+/* TEAM */
+Name: Enjirapu Nikhil
+Role: UI/UX Designer & Full-Stack Developer
+Website: https://enjirapunikhil-portfolio.netlify.app/
+Location: India
+
+/* SITE */
+Focus: UI/UX Design, Web Development, AI/ML, Frontend Development

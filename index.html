@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enjirapu Nikhil | UI/UX Designer & Full-Stack Developer in India</title>
+    <meta name="description" content="Enjirapu Nikhil is a freelance UI/UX designer and full-stack developer in India specializing in Figma, web design, frontend development, React, AI/ML products, and modern digital experiences. Available for freelance projects and collaborations." />
+    <meta name="keywords" content="UI UX designer India, freelance UI UX designer, freelance web designer India, freelance frontend developer India, full stack developer India, React developer India, Figma designer India, website designer India, UI UX freelancer Hyderabad, UI UX freelancer Vijayawada, web developer Hyderabad, web designer Hyderabad, AI product designer, AI UX designer, frontend developer freelancer, custom website developer, landing page designer, SaaS UI UX designer, dashboard UI UX designer, mobile app UI UX designer" />
+    <meta name="author" content="Enjirapu Nikhil" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://enjirapunikhil-portfolio.netlify.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Enjirapu Nikhil | UI/UX Designer & Full-Stack Developer" />
+    <meta property="og:description" content="Freelance UI/UX design, frontend development, full-stack web development and AI product design by Enjirapu Nikhil." />
+    <meta property="og:url" content="https://enjirapunikhil-portfolio.netlify.app/" />
+    <meta property="og:image" content="https://enjirapunikhil-portfolio.netlify.app/assets/logo%20(2).png" />
+    <meta property="og:site_name" content="Enjirapu Nikhil Portfolio" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Enjirapu Nikhil | UI/UX Designer & Full-Stack Developer" />
+    <meta name="twitter:description" content="Freelance UI/UX design, frontend development and AI-powered digital products." />
+    <meta name="twitter:image" content="https://enjirapunikhil-portfolio.netlify.app/assets/logo%20(2).png" />
+    <link rel="sitemap" type="application/xml" href="https://enjirapunikhil-portfolio.netlify.app/sitemap.xml" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Enjirapu Nikhil",
+      "url": "https://enjirapunikhil-portfolio.netlify.app/",
+      "jobTitle": "UI/UX Designer & Full-Stack Developer",
+      "email": "mailto:enjirapunikhil@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/nikhil-enjirapu-630366255",
+        "https://github.com/NikhilEnjirapu",
+        "https://www.instagram.com/nikhil_enjirapu/"
+      ],
+      "knowsAbout": ["UI/UX Design", "Figma", "Frontend Development", "React", "JavaScript", "Node.js", "Java", "Spring Boot", "AI/ML", "Web Development", "Wireframing", "Prototyping", "User Research", "Responsive Design"]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Enjirapu Nikhil - UI/UX & Web Development",
+      "url": "https://enjirapunikhil-portfolio.netlify.app/",
+      "description": "Freelance UI/UX design, web design, frontend development, full-stack web development and AI product design services.",
+      "email": "mailto:enjirapunikhil@gmail.com",
+      "areaServed": "India",
+      "serviceType": ["UI/UX Design", "Web Design", "Frontend Development", "Full-Stack Web Development", "AI Product Design", "Figma Design", "Website Development"]
+    }
+    </script>
+    <link rel="icon" type="image/png" href="assets/logo (2).png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+      .oregano {
+        font-family: "Oregano", cursive;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .design-gallery {
+        display: flex;
+        width: 200%;
+        animation: scroll 30s linear infinite;
+      }
+      .design-gallery:hover {
+        animation-play-state: paused;
+      }
+      
+      /* Stroke Design Styles */
+      .stroke-card {
+        position: relative;
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        border: 1.5px solid #e5e7eb;
+        transition: all 0.3s ease;
+      }
+      
+      .stroke-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 1rem;
+        padding: 1px;
+        background: linear-gradient(135deg, #000000 0%, #4b5563 100%);
+        -webkit-mask: 
+          linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .stroke-card:hover::before {
+        opacity: 1;
+      }
+      
+      .stroke-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-color: #1f2937;
+      }
+      
+      .stroke-tag {
+        position: relative;
+        color: #1f2937;
+        font-weight: 600;
+        display: inline-block;
+      }
+      .stroke-tag::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background: #1f2937;
+        transition: all 0.3s ease;
+      }
+      .stroke-tag:hover::after {
+        height: 3px;
+        background: #4b5563;
+      }
+
+      .contact-button {
+        background-color: black;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 9999px;
+      }
+      
+      .project-card {
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        position: relative; /* For pseudo-element */
+      }
+      .project-card:hover {
+        transform: translateY(-14px);
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.14);
+      }
+      /* Prevent hover jitter when moving up */
+      .project-card::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 14px;
+        background: transparent;
+      }
+      .project-thumbnail {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 12px;
+        display: block;
+      }
+      @media (min-width: 1024px) {
+        .project-thumbnail {
+          height: 350px;
+        }
+      }
+
+      /* Resume Modal Styles */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(8px);
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .modal-content {
+        background: white;
+        border-radius: 2rem;
+        padding: 2.5rem;
+        width: 90%;
+        max-width: 450px;
+        transform: scale(0.9) translateY(20px);
+        transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+      .modal-overlay.active .modal-content {
+        transform: scale(1) translateY(0);
+      }
+      .resume-option {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem 1.5rem;
+        border-radius: 1.25rem;
+        background: #f9fafb;
+        border: 2px solid transparent;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        margin-bottom: 1rem;
+      }
+      .resume-option:hover {
+        background: #f3f4f6;
+        border-color: #000;
+        transform: translateX(4px);
+      }
+      .resume-option:last-child {
+        margin-bottom: 0;
+      }
+      .resume-option i {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body class="overflow-x-hidden relative font-poppins w-full m-0 p-0">
+    <div class="min-h-screen flex flex-col">
+      <div class="flex-grow">
+    <nav class="h-20 w-full lg:flex lg:flex-row flex-col sticky top-0 lg:top-0 pt-4 lg:pt-0 z-50 items-center justify-center">
+      <div class="max-w-screen-xl w-full flex items-center justify-between px-4">
+        <div class="h-10 lg:h-full text-xl font-bold flex items-center text-[#232323]">
+          <img src="assets/logo (2).png" alt="" class="lg:h-10 h-10 mt-1 mr-1.5" />
+          Enjirapu Nikhil
+        </div>
+
+        <div class="hidden lg:flex lg:h-full lg:text-lg text-sm font-medium items-center justify-center">
+          <div class="bg-white rounded-full shadow-sm border border-gray-200 p-1">
+            <ul class="flex items-center space-x-2 lg:space-x-4 text-[#232323]">
+              <a href="#home" class="hover:bg-gray-100 rounded-full px-3 py-1 transition-colors duration-200"><li>Home</li></a>
+              <a href="#about" class="hover:bg-gray-100 rounded-full px-3 py-1 transition-colors duration-200"><li>About</li></a>
+              <a href="#skills" class="hover:bg-gray-100 rounded-full px-3 py-1 transition-colors duration-200"><li>Skills</li></a>
+              <a href="#featured-work" class="hover:bg-gray-100 rounded-full px-3 py-1 transition-colors duration-200"><li>Featured Work</li></a>
+              <button onclick="openResumeModal()" class="hover:bg-gray-100 rounded-full px-3 py-1 transition-colors duration-200 focus:outline-none"><li class="cursor-pointer">Resume</li></button>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex lg:h-full h-10 lg:text-lg text-sm font-medium items-center justify-center">
+            <a href="#contact" class="contact-button hover:bg-gray-800 transition-colors duration-200 flex items-center">
+              Contact
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <div class="lg:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden absolute top-20 left-0 w-full bg-white z-50 shadow-lg">
+        <div class="p-4">
+          <ul class="flex flex-col space-y-4 text-lg">
+            <a href="#home" class="hover:text-gray-500"><li>Home</li></a>
+            <a href="#about" class="hover:text-gray-500"><li>About</li></a>
+            <a href="#skills" class="hover:text-gray-500"><li>Skills</li></a>
+            <a href="#featured-work" class="hover:text-gray-500"><li>Featured Work</li></a>
+            <button onclick="openResumeModal()" class="text-left hover:text-gray-500 focus:outline-none"><li>Resume</li></button>
+            <a href="#contact" class="contact-button hover:bg-gray-800 transition-colors duration-200 flex items-center justify-center">Contact<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main -->
+    <div id="home" class="lg:h-[700px] h-[650px] w-full pb-16 lg:px-36 px-4 pt-10">
+      <div class="h-full w-full flex items-top justify-center relative">
+        <div class="h-max w-full lg:w-[800px] mt-28 lg:mt-32 relative">
+          <p class="oregano lg:text-8xl text-5xl text-center text-[#232323]">
+            Crafting Code & Designing Dreams
+          </p>
+          <img
+            class="lg:h-6 h-3 absolute lg:left-20 -left-2 lg:bottom-[70px] bottom-[25px]"
+            src="assets/3lines.png"
+            alt=""
+          />
+          <img
+            class="lg:h-20 h-6 absolute lg:left-16 -left-1 bottom-4 -z-10"
+            src="assets/green-shape.png"
+            alt=""
+          />
+          <img
+            class="lg:h-20 h-10 absolute lg:right-[80px] -right-[5px] top-0 -z-10"
+            src="assets/red-shape.png"
+            alt=""
+          />
+          <img
+            class="lg:h-6 h-3 absolute lg:top-0 top-1 lg:left-24 left-1 animate-bounce"
+            src="assets/new.png"
+            alt=""
+          />
+          <img
+            class="lg:h-5 h-2 absolute lg:right-20 right-0 lg:bottom-20 bottom-7 animate-pulse"
+            src="assets/star.png"
+            alt=""
+          />
+          <img
+            class="lg:h-10 h-6 absolute top-0 lg:right-[75px] -right-3"
+            src="assets/wrinkle-2.png"
+            alt=""
+          />
+          <img class="lg:h-5 h-2 absolute lg:right-36 right-7" src="assets/wrinkle.png" alt="" />
+        </div>
+        <div
+          class="w-full max-w-[300px] lg:max-w-none lg:w-[300px] font-poppins text-sm lg:text-lg text-center lg:text-left absolute lg:bottom-0 bottom-36 lg:left-0 font-semibold text-[#232323]"
+        >
+          Scroll through to see how creativity and code come together. Your next
+          big idea might just start here!
+        </div>
+        <img
+          src="assets/scroll-ellipse.png"
+          class="h-20 absolute lg:right-0 lg:bottom-0 mx-auto lg:mx-0 bottom-10"
+          alt=""
+        />
+        <p class="absolute lg:bottom-10 lg:right-7 bottom-20 mx-auto lg:mx-0 text-xs">Explore</p>
+        <img
+          class="absolute lg:bottom-5 bottom-16 lg:right-10 mx-auto lg:mx-0 animate-bounce h-3"
+          src="assets/arrow.png"
+        />
+      </div>
+    </div>
+    <!--About-->
+    <div id="about" class="h-max py-20 mb-16 lg:px-36 px-4 relative w-full overflow-hidden">
+      <img
+        src="assets/aboutH-1.png"
+        class="h-5 lg:h-10 absolute lg:right-72 right-7 lg:top-40 top-44"
+        alt=""
+      />
+      <img
+        src="assets/aboutH-2.png"
+        class="lg:h-20 h-10 absolute lg:left-64 left-5 lg:top-52 top-72"
+        alt=""
+      />
+      <div class="w-min h-min mx-auto relative">
+        <h1 class="oregano text-6xl text-[#232323]">About</h1>
+        <img
+          src="assets/aboutUnderline.png"
+          class="absolute -bottom-3"
+          alt=""
+        />
+        <img
+          src="assets/aboutCircle.png"
+          class="h-20 absolute -top-2 -left-12 -z-10"
+          alt=""
+        />
+      </div>
+      <div class="lg:mx-44 mx-5 text-center font-poppins mt-20 lg:text-xl text-lg font-semibold text-[#232323]">
+        I’m Enjirapu Yuva Sekhar Nikhil Eswara Achari, a
+        <span class="font-bold text-black">UI designer</span> and
+        <span class="font-bold text-black">developer</span> passionate about
+        creating intuitive, impactful digital experiences. I combine
+        <span class="font-bold text-black">AI/ML expertise</span> with
+        <span class="font-bold text-black">frontend development</span> to transform
+        ideas into innovative products—ranging from intelligent applications to
+        engaging web platforms.
+      </div>      
+    </div>
+    <!--Skills-->
+    <div id="skills" class="w-full bg-yellow-300 relative min-h-[750px] py-20 mb-16 lg:px-36 px-4">
+      <img
+        src="assets/pencil.png"
+        class="lg:h-20 h-10 right-0 lg:-right-8 top-10 absolute"
+        alt=""
+      />
+      <div class="w-min h-min mx-auto relative">
+        <h1 class="oregano text-6xl text-[#000] z-1">Skills</h1>
+        <img
+          src="assets/aboutUnderline.png"
+          class="absolute -bottom-3"
+          alt=""
+        />
+      </div>
+
+      <!-- Skills Toggle Filter -->
+      <div class="flex justify-center mt-12 mb-4 relative z-10">
+        <div class="bg-white rounded-xl shadow-md p-1.5 flex space-x-1 border border-gray-200">
+          <button onclick="filterSkills('all')" id="btn-all" class="px-6 py-2.5 rounded-xl text-sm lg:text-base font-semibold transition-all duration-300 bg-black text-white shadow-sm">All</button>
+          <button onclick="filterSkills('developer')" id="btn-developer" class="px-6 py-2.5 rounded-xl text-sm lg:text-base font-semibold transition-all duration-300 text-gray-600 hover:bg-gray-100">Developer</button>
+          <button onclick="filterSkills('designer')" id="btn-designer" class="px-6 py-2.5 rounded-xl text-sm lg:text-base font-semibold transition-all duration-300 text-gray-600 hover:bg-gray-100">Designer</button>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center items-center mt-8 mb-6 max-w-6xl mx-auto" id="skills-container">
+        <div data-category="developer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">Python</div>
+        <div data-category="developer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">Java</div>
+        <div data-category="designer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">UI/UX</div>
+        <div data-category="designer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">Graphic Designing</div>
+        <div data-category="developer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">AI-ML</div>
+        <div data-category="developer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">REACT</div>
+        <div data-category="developer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">Sql</div>
+        <div data-category="developer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">Javascript</div>
+        <div data-category="designer" class="skill-item lg:w-80 w-40 lg:h-20 h-14 text-center bg-white text-black lg:m-4 m-2 rounded-xl shadow-lg flex items-center justify-center lg:text-xl text-lg font-semibold transition-all duration-300 transform">Figma</div>
+      </div>
+    </div>
+    <!--Projects-->
+    <section id="featured-work" class="relative py-10 pb-40 px-4 lg:px-0">
+      <div class="w-full">
+        <div class="w-min h-min mx-auto relative mb-16">
+          <h1 class="oregano text-6xl text-[#232323] whitespace-nowrap mb-2">Featured Work</h1>
+          <img
+            src="assets/projectsUnderline.png"
+            class="absolute -bottom-6"
+            alt=""
+          />
+          <img
+            src="assets/projectsCircle.png"
+            class="h-20 absolute -top-2 -left-12 -z-10"
+            alt=""
+          />
+        </div>
+      </div>
+      
+      <!-- Project 1: Paneluxe -->
+      <div class="project-card min-h-[500px] lg:min-h-[600px] w-full max-w-5xl mx-auto shadow-2xl bg-white border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[200px] my-10 p-4 md:p-6">
+        <h1 class="text-4xl lg:text-5xl text-center font-bold poppins text-[#232323] mb-4 lg:mb-6">Paneluxe</h1>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Figma</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">UI/UX Design</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Wireframing</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Prototyping</div>
+        </div>
+        <p class="text-center text-[#232323] text-sm lg:text-base px-2 lg:px-6 mb-6 lg:mb-8">
+          Designed a premium digital experience for a luxury interior brand, blending modern aesthetics with intuitive navigation.<br>
+          The design system emphasizes visual storytelling, sustainability, and premium craftsmanship.
+        </p>
+        <div class="w-full max-w-4xl mx-auto bg-gray-100 rounded-xl border border-gray-300 overflow-hidden">
+          <img src="assets/1.jpg" alt="Paneluxe UI/UX Design Preview" class="project-thumbnail">
+        </div>
+      </div>
+      <!-- Project 1: Real-time Bus Tracking -->
+      <div class="project-card min-h-[400px] lg:min-h-[450px] w-full max-w-5xl mx-auto shadow-2xl bg-white border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[210px] my-10 p-4 md:p-6">
+        <h1 class="text-4xl lg:text-5xl text-center font-bold poppins text-[#232323] mb-4 lg:mb-6">Real-time Bus Tracking</h1>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Node.js</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">EJS</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">WebSockets</div>
+        </div>
+        <p class="text-center text-[#232323] text-sm lg:text-base px-2 lg:px-6 mb-6 lg:mb-8">
+          Led the development of a real-time bus tracking system using Node.js and EJS. Enhanced commuter convenience with live updates and seamless UI integration.
+        </p>
+        <div class="w-full max-w-4xl mx-auto bg-gray-100 rounded-xl border border-gray-300 overflow-hidden">
+          <img src="assets/real time bus.jpg" alt="Real-time Bus Tracking Preview" class="project-thumbnail">
+        </div>
+      </div>
+
+      <!-- Project 2: G-Mart -->
+      <div class="project-card min-h-[400px] lg:min-h-[450px] w-full max-w-5xl mx-auto shadow-2xl bg-white border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[220px] my-10 p-4 md:p-6">
+        <h1 class="text-4xl lg:text-5xl text-center font-bold poppins text-[#232323] mb-4 lg:mb-6">G-Mart Marketplace</h1>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">React</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Node.js</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">MongoDB</div>
+        </div>
+        <p class="text-center text-[#232323] text-sm lg:text-base px-2 lg:px-6 mb-6 lg:mb-8">
+          Built a zero-cost pickup marketplace platform enabling users to list and pick up items. Focused on creating a user-friendly experience while handling marketplace logic and data integrity.
+        </p>
+        <div class="w-full max-w-4xl mx-auto bg-gray-100 rounded-xl border border-gray-300 overflow-hidden">
+          <img src="assets/Gmart.jpg" alt="G-Mart Marketplace Preview" class="project-thumbnail">
+        </div>
+      </div>
+
+      <!-- Project 3: AlgoCore -->
+      <div class="project-card min-h-[400px] lg:min-h-[450px] w-full max-w-5xl mx-auto shadow-2xl bg-white border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[230px] my-10 p-4 md:p-6">
+        <h1 class="text-4xl lg:text-5xl text-center font-bold poppins text-[#232323] mb-4 lg:mb-6">AlgoCore</h1>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">React</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Monaco</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">NLP</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">In-Progress</div>
+        </div>
+        <p class="text-center text-[#232323] text-sm lg:text-base px-2 lg:px-6 mb-6 lg:mb-8">
+          Currently developing a coding platform with multi-language support, NLP readiness, and intuitive exam/test-taking flows. Built with React and Monaco Editor.
+        </p>
+        <div class="w-full max-w-4xl mx-auto bg-gray-100 rounded-xl border border-gray-300 overflow-hidden">
+          <img src="assets/AlgoCore.jpg" alt="AlgoCore Preview" class="project-thumbnail">
+        </div>
+      </div>
+
+      <!-- Project 4: Fleet Enable -->
+      <div class="project-card min-h-[400px] lg:min-h-[450px] w-full max-w-5xl mx-auto shadow-2xl bg-white border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[240px] my-10 p-4 md:p-6">
+        <h1 class="text-4xl lg:text-5xl text-center font-bold poppins text-[#232323] mb-4 lg:mb-6">Fleet Enable – Final Mile TMS Platform</h1>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Figma</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Design Systems</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">AI Workflow Design</div>
+        </div>
+        <p class="text-center text-[#232323] text-sm lg:text-base px-2 lg:px-6 mb-6 lg:mb-8">
+          Designed an end-to-end transport management system for final-mile carriers, enabling real-time tracking, operational dashboards, and AI-assisted workflows to improve delivery efficiency and decision-making.
+        </p>
+        <div class="w-full max-w-4xl mx-auto bg-gray-100 rounded-xl border border-gray-300 overflow-hidden">
+          <img src="assets/fleetenable.jpg" alt="Fleet Enable TMS Platform Preview" class="project-thumbnail">
+        </div>
+      </div>
+
+      <!-- Project 5: VcareMigo -->
+      <div class="project-card min-h-[400px] lg:min-h-[450px] w-full max-w-5xl mx-auto shadow-2xl bg-white border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[250px] my-10 p-4 md:p-6">
+        <h1 class="text-4xl lg:text-5xl text-center font-bold poppins text-[#232323] mb-4 lg:mb-6">VcareMigo – Family Management App</h1>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Figma</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Prototyping</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">User Research</div>
+        </div>
+        <p class="text-center text-[#232323] text-sm lg:text-base px-2 lg:px-6 mb-6 lg:mb-8">
+          Designed a multi-user mobile application for managing family communication, tasks, and daily activities with a focus on accessibility, intuitive navigation, and seamless user experience across different user groups.
+        </p>
+        <div class="w-full max-w-4xl mx-auto bg-gray-100 rounded-xl border border-gray-300 overflow-hidden">
+          <img src="assets/Vcaremigo.jpg" alt="VcareMigo Family Management App Preview" class="project-thumbnail">
+        </div>
+      </div>
+
+      <!-- Project 6: CineReserve -->
+      <div class="project-card min-h-[400px] lg:min-h-[450px] w-full max-w-5xl mx-auto shadow-2xl bg-white border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[260px] my-10 p-4 md:p-6">
+        <h1 class="text-4xl lg:text-5xl text-center font-bold poppins text-[#232323] mb-4 lg:mb-6">CineReserve – Movie Ticket Booking Platform</h1>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">React</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Spring Boot</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Hibernate/JPA</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">MySQL</div>
+        </div>
+        <p class="text-center text-[#232323] text-sm lg:text-base px-2 lg:px-6 mb-6 lg:mb-8">
+          Built a full-stack movie ticket booking system with seat selection, scheduling, and secure JWT-based authentication. Managed concurrent booking scenarios and optimized database queries to improve performance under high-concurrency conditions.
+        </p>
+        <div class="w-full max-w-4xl mx-auto bg-gray-100 rounded-xl border border-gray-300 overflow-hidden">
+          <img src="assets/CineReserve.jpg" alt="CineReserve Preview" class="project-thumbnail">
+        </div>
+      </div>
+
+      <!-- Project 7: TownMarket -->
+      <div class="project-card min-h-[400px] lg:min-h-[450px] w-full max-w-5xl mx-auto shadow-2xl bg-white border-2 border-gray-600 rounded-3xl sticky lg:top-[130px] top-[270px] my-10 p-4 md:p-6">
+        <h1 class="text-4xl lg:text-5xl text-center font-bold poppins text-[#232323] mb-4 lg:mb-6">TownMarket – Full-Stack E-Commerce Platform</h1>
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">React</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Vite</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Tailwind</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Spring Boot</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">MongoDB</div>
+          <div class="py-1 px-3 lg:px-4 rounded-3xl bg-gray-200 text-black text-xs border-2 border-gray-400 font-semibold">Docker</div>
+        </div>
+        <p class="text-center text-[#232323] text-sm lg:text-base px-2 lg:px-6 mb-6 lg:mb-8">
+          Developed an e-commerce platform with authentication, cart, and checkout features. Implemented role-based access control and integrated MongoDB for inventory management. Built a responsive UI ensuring seamless user experience across devices.
+        </p>
+        <div class="w-full max-w-4xl mx-auto bg-gray-100 rounded-xl border border-gray-300 overflow-hidden">
+          <img src="assets/TownMarket.jpg" alt="TownMarket Preview" class="project-thumbnail">
+        </div>
+      </div>
+
+    </section>
+    <!--Experience-->
+    <div id="experience" class="w-full bg-white pt-10 pb-16 px-4">
+      <div class="max-w-3xl mx-auto">
+        <div class="w-max h-min mx-auto relative z-10 mb-12">
+          <h1 class="oregano lg:text-6xl text-4xl text-[#232323] z-10">Experience</h1>
+          <img src="assets/aboutUnderline.png" class="absolute -bottom-3 w-full" alt="" />
+          <img src="assets/green-shape.png" class="h-20 absolute -top-2 -left-12 -z-10" alt="" />
+        </div>
+
+        <!-- Experience Card -->
+        <div class="stroke-card p-8 relative group">
+          <div class="relative">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-1">UI/UX Designer</h3>
+                <p class="stroke-tag inline-block">Codedale</p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span class="inline-block text-sm px-4 py-1.5 rounded-full border border-gray-300 bg-white text-gray-700 font-medium hover:bg-gray-50 transition-colors">
+                  2024 – Present
+                </span>
+              </div>
+            </div>
+            
+            <p class="text-gray-700 mb-6 leading-relaxed border-t border-gray-100 pt-4">
+              Contributing to the design and development of intuitive user interfaces for modern web applications. Collaborating closely with developers to ensure seamless integration between design and functionality. Conducting user research and iterative testing to refine visual consistency, enhance usability, and deliver cohesive user experiences aligned with project goals.
+            </p>
+            
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-1.5 text-sm font-medium rounded-full border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+                Figma
+              </span>
+              <span class="px-4 py-1.5 text-sm font-medium rounded-full border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+                Prototyping
+              </span>
+              <span class="px-4 py-1.5 text-sm font-medium rounded-full border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+                Wireframing
+              </span>
+              <span class="px-4 py-1.5 text-sm font-medium rounded-full border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+                User Research
+              </span>
+              <span class="px-4 py-1.5 text-sm font-medium rounded-full border border-gray-200 text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+                Responsive Design
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact-->
+    <div id="contact" class="w-full bg-white pt-28 pb-20 px-4">
+      <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="w-max h-min mx-auto relative z-10 mb-12">
+          <h1 class="oregano text-6xl text-[#232323] z-10">Contact</h1>
+          <img src="assets/aboutUnderline.png" class="absolute -bottom-3 w-full" alt="" />
+          <img src="assets/green-shape.png" class="h-20 absolute -top-2 -left-4 md:-left-12 -z-10" alt="" />
+        </div>
+
+        <!-- Contact Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <!-- Left Column: Info -->
+          <div>
+            <p class="text-gray-700 font-medium leading-relaxed mb-10">
+              Whether you're here to learn more about my work, explore potential collaborations, or just have a chat, I'd love to connect. I'm always open to discussing new ideas, innovative projects, and questions. My expertise spans UI/UX design, frontend development, and creative coding. Reach out via the form below or email me directly.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4 group">
+                <div class="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-yellow-100 transition-colors duration-300">
+                  <span class="text-2xl">📍</span>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Address</p>
+                  <p class="text-lg font-bold text-[#232323]">Eluru</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4 group">
+                <div class="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors duration-300">
+                  <span class="text-2xl">📞</span>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Phone</p>
+                  <p class="text-lg font-bold text-[#232323]">+91 9177973377</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4 group">
+                <div class="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors duration-300">
+                  <span class="text-2xl">📧</span>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Email</p>
+                  <p class="text-lg font-bold text-[#232323]">enjirapunikhil@gmail.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Icons Moved Here -->
+            <div class="flex flex-wrap gap-4 mt-12">
+              <a href="https://www.linkedin.com/in/nikhil-enjirapu-630366255" target="_blank" rel="noopener noreferrer" 
+                 class="group relative overflow-hidden rounded-full px-4 py-2 transition-all duration-300 ease-out hover:shadow-lg hover:shadow-blue-100 whitespace-nowrap"
+                 style="background: linear-gradient(to bottom, #0A66C2 0%, #0D8AEE 100%);">
+                <div class="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                <div class="flex items-center space-x-2">
+                  <div class="flex-shrink-0 w-5 h-5 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm z-10">
+                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-semibold text-white relative z-10">LinkedIn</span>
+                </div>
+              </a>
+              
+              <a href="https://github.com/NikhilEnjirapu" target="_blank" rel="noopener noreferrer"
+                 class="group relative overflow-hidden rounded-full px-4 py-2 transition-all duration-300 ease-out hover:shadow-lg hover:shadow-gray-200 whitespace-nowrap"
+                 style="background: linear-gradient(to bottom, #333 0%, #6e6e6e 100%);">
+                <div class="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                <div class="flex items-center space-x-2">
+                  <div class="flex-shrink-0 w-5 h-5 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm z-10">
+                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.254-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.393.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-semibold text-white relative z-10">GitHub</span>
+                </div>
+              </a>
+              
+              <a href="https://www.instagram.com/nikhil_enjirapu/" target="_blank" rel="noopener noreferrer"
+                 class="group relative overflow-hidden rounded-full px-4 py-2 transition-all duration-300 ease-out hover:shadow-lg hover:shadow-pink-100 whitespace-nowrap"
+                 style="background: linear-gradient(to bottom, #E1306C 0%, #C13584 50%, #833AB4 100%);">
+                <div class="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                <div class="flex items-center space-x-2">
+                  <div class="flex-shrink-0 w-5 h-5 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm z-10">
+                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12.001 0zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8z"/>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-semibold text-white relative z-10">Instagram</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Form -->
+          <div class="stroke-card p-8 bg-white">
+            <form action="https://formspree.io/f/mpqbydey" method="POST" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="name" class="text-sm font-bold text-gray-700 ml-1">Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required
+                         class="w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-black focus:outline-none transition-colors duration-200">
+                </div>
+                <div class="space-y-2">
+                  <label for="email" class="text-sm font-bold text-gray-700 ml-1">Email</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required
+                         class="w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-black focus:outline-none transition-colors duration-200">
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="subject" class="text-sm font-bold text-gray-700 ml-1">Subject</label>
+                <input type="text" id="subject" name="_subject" placeholder="Project Inquiry" 
+                       class="w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-black focus:outline-none transition-colors duration-200">
+              </div>
+              <div class="space-y-2">
+                <label for="message" class="text-sm font-bold text-gray-700 ml-1">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required
+                          class="w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-black focus:outline-none transition-colors duration-200 resize-none"></textarea>
+              </div>
+              <button type="submit" class="w-full contact-button py-4 text-lg font-bold hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div> <!-- Close flex-grow -->
+      <footer class="mt-auto">
+        <div class="bg-[#232323] w-full lg:h-[300px] h-[100px] lg:p-10 p-3 flex justify-center items-center">
+          <h1 class="lg:text-9xl text-3xl font-bold poppins text-[#3f3f3f]">Let's Build Together!</h1>
+        </div>
+        <div class="bg-black text-center p-2 lg:py-0 py-4 w-full">
+          <p class="text-white text-xs m-0">© Enjirapu Nikhil. All rights reserved.</p>
+        </div>
+      </footer>
+    </div> <!-- Close min-h-screen flex-col -->
+
+    <!-- Resume Selection Modal -->
+    <div id="resume-modal" class="modal-overlay" onclick="closeResumeModal(event)">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900 oregano">Choose Your Path</h2>
+          <button onclick="closeResumeModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        
+        <p class="text-gray-600 mb-8 font-medium">Which version of my resume would you like to view?</p>
+
+        <div class="space-y-4">
+          <div onclick="selectResume('developer')" class="resume-option group">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mr-4 group-hover:bg-blue-100 transition-colors">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900">Developer Resume</h3>
+                <p class="text-xs text-gray-500">Tech-focused & AI/ML</p>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-gray-300 group-hover:text-black transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+
+          <div onclick="selectResume('designer')" class="resume-option group">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mr-4 group-hover:bg-purple-100 transition-colors">
+                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900">Designer Resume</h3>
+                <p class="text-xs text-gray-500">UI/UX & Creative Work</p>
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-gray-300 group-hover:text-black transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close the menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // Skills Toggle Functionality
+      window.filterSkills = function(category) {
+        // Update active button styling
+        const buttons = ['all', 'developer', 'designer'];
+        buttons.forEach(btn => {
+          const el = document.getElementById('btn-' + btn);
+          if (btn === category) {
+            el.classList.add('bg-black', 'text-white', 'shadow-sm');
+            el.classList.remove('text-gray-600', 'hover:bg-gray-100');
+          } else {
+            el.classList.remove('bg-black', 'text-white', 'shadow-sm');
+            el.classList.add('text-gray-600', 'hover:bg-gray-100');
+          }
+        });
+
+        // Filter items
+        const items = document.querySelectorAll('.skill-item');
+        items.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      };
+
+      // Resume Modal Logic
+      const resumeModal = document.getElementById('resume-modal');
+      const RESUME_LINKS = {
+        developer: 'https://drive.google.com/file/d/1BwtrzQamleS3QJYQhl9fkGy9uchnhxAc/view?usp=sharing',
+        designer: 'https://drive.google.com/file/d/1wJLeWDqpjfQU7pos2FA0MAOqqdEqI3Nm/view?usp=sharing'
+      };
+
+      window.openResumeModal = function() {
+        resumeModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      };
+
+      window.closeResumeModal = function(e) {
+        // If 'e' is provided, it's from overlay click, otherwise it's direct call
+        if (e && e.target !== resumeModal) return; 
+        resumeModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      };
+
+      window.selectResume = function(type) {
+        const link = RESUME_LINKS[type];
+        if (link) {
+          window.open(link, '_blank');
+          closeResumeModal();
+        }
+      };
+    </script>
+  </body>
+</html>

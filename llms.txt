@@ -1,0 +1,21 @@
+# Enjirapu Nikhil Portfolio
+
+Canonical: https://enjirapunikhil-portfolio.netlify.app/
+
+## Summary
+Enjirapu Nikhil is a UI/UX designer and developer offering freelance UI/UX design, frontend development, full-stack web development and AI/ML product design.
+
+## Services
+- UI/UX design
+- Figma wireframing and prototyping
+- Website and frontend development
+- React development
+- Full-stack web development
+- AI/ML product interfaces
+- Responsive web design
+- Design systems
+
+## Contact
+Email: enjirapunikhil@gmail.com
+LinkedIn: https://www.linkedin.com/in/nikhil-enjirapu-630366255
+GitHub: https://github.com/NikhilEnjirapu
